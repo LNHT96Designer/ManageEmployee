@@ -1,0 +1,392 @@
+body{
+    overflow-x: hidden;
+  }
+    .myContain{
+      position: relative;
+      padding-left: 24%;
+      width: 100%;
+      height: 714px;
+      overflow: hidden;
+      background-image: url(../img/the-blurred-819392_960_720.jpg);
+      background-size: cover;
+      
+    }
+    .imgPerson{
+      position: absolute;
+      width: 38%;
+      height: 714px;
+      left: 0%;
+    }
+    .myinput{
+      border: none;  
+    }
+    .input1{
+      margin-left: 30.8%;
+    }
+    .input2{
+      margin-left: 26.4%;
+      text-transform: capitalize;
+    }
+    .input3{
+      margin-left: 27.1%;
+    }
+    .input4{
+      margin-left: 15.7%;
+    }
+    .input5{
+      margin-left: 18.65%;
+    }
+    .input6{
+      margin-left: 20%;
+    }
+    .input7{
+      margin-left: 4.8%;
+    }
+    .input8{
+      margin-left: 24.3%;
+      text-transform: capitalize;
+    }
+    .input9{
+      margin-left: 21.7%;
+    }
+    .myinput::placeholder{
+        color: rgb(185, 185, 185);
+    }
+    .required{
+      display: block;
+      padding-left: 33.5%;
+      color: tomato !important
+    }
+    .hide{
+        display: none !important;
+    }
+    .show{
+      display:block !important;
+    }
+    table thead{
+      font-weight: 500;
+    }
+    .iconTick{
+      height: 15px;
+      width: auto;
+      margin-left: 2%;
+    }
+    .menuFeature{
+      width: 100%;
+      height: 60px;
+      background-color: rgb(236, 237, 240);
+    }
+    .btnAdd{
+     margin-left: 6.5%;
+     background-color: rgb(255, 189, 46);
+     border: none;
+    }
+    .btnUpdate{
+      margin-left: 10%;
+      background-color: rgb(255, 189, 46);
+      border: none;
+       
+     }
+     .menuFeature p{
+      color:rgb(104, 41, 175);
+      padding-top: 17px;
+      margin-left: 12px;
+     }
+    input:hover{
+      background-color: rgb(243, 243, 243);
+    }
+    .btnAdd:hover{
+      background-color: rgb(104, 41, 175);
+    }
+    .btnUpdate:hover{
+      background-color: rgb(104, 41, 175);
+    }
+    .btnStyle{
+      background-color: white;
+      border-color: rgb(255, 173, 80);
+      color: rgb(255, 173, 80);
+      font-size: 13px;
+    }
+    .btnStyle:hover{
+      background-color: rgb(255, 173, 80);
+      border-color: rgb(255, 173, 80);
+      color: white;
+    }
+    #btnReset{
+      border: none;
+    }
+    .textlogo{
+      position: absolute;
+      color: white;
+      left: 5.6%;
+      top: 78px;
+      text-align: center;
+      color: #6829AF;
+      z-index: 2;
+      font-size: 11px;
+    }
+    .circle2{
+      position: absolute;
+      width: 5%;
+      height: 63px;
+      background-color:rgb(255, 173, 80);
+      opacity: 0.1;
+      border-radius: 100%;
+      top:50px;
+      right:5%;
+    }
+    .circle3{
+      position: absolute;
+      width: 13.5%;
+      height: 170px;
+      background-color:rgb(255, 144, 80);
+      opacity: 0.3;
+      border-radius: 100%;
+      top:605px;
+      right:-3%;
+    }
+    .circle4{
+      position: absolute;
+      width: 2.5%;
+      height: 30px;
+      background-color:rgb(241, 204, 122);
+      opacity: 0.1;
+      border-radius: 100%;
+      top:30px;
+      left:2.5%;
+    }
+    .circle5{
+      position: absolute;
+      width: 10.5%;
+      height: 130px;
+      background-color:rgb(255, 173, 80);
+      opacity: 0.15;
+      border-radius: 100%;
+      top:510px;
+      left:40%;
+    }
+    .blogicon{
+      color:  #6829AF;
+      position: absolute;
+      left: 7.5%;
+      z-index: 2;
+      top:42px;
+      width: 20px !important;
+      height: auto !important;
+    }
+    .infotick{
+      color: coral;
+    }
+    table{
+      font-size: 13px;
+    }
+    .mylink{
+      color: rgb(255, 173, 80) !important;
+      font-size: 14px;
+      border: none !important;
+    }
+    .mylink:hover{
+      text-decoration: underline !important;
+      background: none;
+    }
+    .myarrow{
+      font-size: 15px;
+    }
+    label{
+      color: rgb(7, 7, 7);
+    }
+    .textdecoration{
+      text-decoration: underline !important;
+    }
+    .inputsearch{
+      margin-top: 1px;
+      margin-right: 12px;
+    }
+    .inputsearch input{
+      border: none;
+
+    }
+    .inputsearch input::placeholder{
+      color: rgb(185, 185, 185);
+    }
+    .inputsearch input:hover{
+      background-color: white;
+    }
+    .btnsearch{
+      background-color: white;
+      border: none;
+      color: rgb(104, 41, 175);
+    }
+    .btnsearch:hover{
+      background-color: rgb(104, 41, 175);
+    }
+    .resetbar{
+      height: 70px;
+      padding-top: 16px;
+      text-align: center;
+      background-color: rgb(236, 237, 240);
+    }
+    .btncomback{
+      background-color: rgb(104, 41, 175);
+      color: aliceblue;
+    }
+    .btncomback:hover{
+      background-color: rgb(81, 31, 138);
+    }
+    .footer{
+      height: 70px;
+      padding-top: 28px;
+      background-image: url(../img/the-blurred-819392_960_720.jpg);
+      text-align: center;
+      background-size: cover; 
+    }
+    .footer p{
+      color: white;
+      font-size: 12px;
+    }
+    .menuright{
+      margin-right: 12px;
+    }
+    .mydropdown{
+      margin-top: 1px;
+      margin-right: 12px;
+    }
+    .btndropdown{
+      background-color:white;
+      color: #6829AF;
+    }
+    .mydropdownmenu{
+      border: 0.5px solid rgb(209, 209, 209) !important;
+      position: absolute;;
+    }
+    .menudropdownascending{
+      position: absolute;
+      left: 100%;
+      text-align: left;
+      top: -2%;
+      transition: 2s;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+      display: none;
+      border: 0.5px solid rgb(209, 209, 209) !important;
+      background-color:white;
+      border-radius: 5px    ;
+      -webkit-border-radius: 5px    ;
+      -moz-border-radius: 5px    ;
+      -ms-border-radius: 5px    ;
+      -o-border-radius: 5px    ;
+}
+.menudropdowndecrease{
+  position: absolute;
+  left: 100%;
+  text-align: left;
+  top: -2%;
+  display: none;
+  border: 0.5px solid rgb(209, 209, 209) !important;
+  background-color:white;
+  border-radius: 5px    ;
+  -webkit-border-radius: 5px    ;
+  -moz-border-radius: 5px    ;
+  -ms-border-radius: 5px    ;
+  -o-border-radius: 5px    ;
+}
+.mydropdownitemascending:hover{
+  color: #6829AF;
+  width: 99.5% !important;
+}
+.mydropdownitemascending:active{
+  color: #6829AF;
+  background-color: #F8F9FA;
+}
+.mydropdownitemdecrease:hover{
+  color: #6829AF;
+  width: 99.5% !important;
+}
+.mydropdownitemdecrease:active{
+  color: #6829AF;
+  background-color: #F8F9FA;
+}
+.mydropdownitemascending i{
+  margin-left: 46%;
+}
+.mydropdownitemdecrease i{
+  margin-left: 52%;
+}
+.mydropdownitemalphabetical:hover{
+  color: #6829AF;
+  cursor: pointer;
+  width: 99.9% !important;
+}
+.mydropdownitemalphabetical:active{
+  color: #6829AF;
+  background-color: rgb(233, 233, 233);
+}
+.mydropdownmenu .mydropdownitemascending:hover .menudropdownascending{
+  display: block;
+}
+.mydropdownitemage:hover{
+  color: #6829AF;
+  width: 99.8% !important;
+  cursor: pointer;
+}
+.mydropdownitemage:active{
+  color: #6829AF;
+  background-color: rgb(233, 233, 233);
+}
+.mydropdownitemsalary:hover{
+  color: #6829AF;
+  width: 99.8% !important;
+  cursor: pointer;
+}
+.mydropdownitemsalary:active{
+  color: #6829AF;
+  background-color: rgb(233, 233, 233);
+}
+.mydropdownmenu .mydropdownitemdecrease:hover .menudropdowndecrease{
+  display: block;
+}
+.mydropdownitemstaff:hover{
+  color: #6829AF;
+  cursor: pointer;
+  width: 99.8% !important;
+  margin-left: 0.1%;
+}
+.mydropdownitemstaff:active{
+  color: #6829AF;
+  background-color: rgb(233, 233, 233);
+}
+.mydropdownitemcount:hover{
+  color: #6829AF;
+  cursor: pointer;
+  width: 99.8% !important;
+  margin-left: 0.1%;
+}
+.mydropdownitemcount:active{
+  color: #6829AF;
+  background-color: rgb(233, 233, 233);
+}
+.declarebar{
+  width: 100%;
+  height: 50px;
+  background-color: #6829AF;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 14px;
+}
+#declare b{
+  color:rgb(255, 173, 80);
+}
+.emptybar{
+  width: 100%;
+  height: 100px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+  color: rgb(216, 216, 216);
+}
+
+

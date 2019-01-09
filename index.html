@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>EMPLOYEE MANAGEMENT</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet"
+    type="text/css" />
+  <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body>
+  <!-- form -->
+  <div class="d-flex justify-content-center myContain">
+    <img class="imgPerson" src="asset/img/kisspng-professional-woman-photography-woman-smiling-5b4f2c50464de1.097600461531915344288.png" />
+    <h6 class="textlogo">EMPLOYEE <br />MANAGEMENT</h6>
+    <i class="fa fa-address-book fa-2x blogicon"></i>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+    <div class="circle5"></div>
+    <form action="" class="form col-lg-8 mt-5">
+      <h5 class="mt-3">Please enter infomation employee on follow form:</h5>
+      <div class="form-inline d-flex justify-content-left mt-4">
+        <label for="txtName">Name</label>
+        <input type="text" maxlength="30" id="txtName" class="form-control col-lg-7 myinput input2" placeholder="Enter your Name!">
+        <img class="iconTick hide" src="asset/img/check-tick-icon-10.png" alt="" />
+      </div>
+      <small id="helpId" class="text-muted hide"></small>
+      <div class="form-inline mt-2 d-flex justify-content-left">
+        <label for="txtEmail">Email</label>
+        <input type="email" id="txtEmail" class="form-control col-md-7 myinput input3" placeholder="Enter your Email!">
+        <img class="iconTick hide" src="asset/img/check-tick-icon-10.png" alt="" />
+      </div>
+      <small id="helpId" class="text-muted hide"></small>
+      <div class="form-inline mt-2 d-flex justify-content-left">
+        <label for="txtPhoneNumber">Phone Number</label>
+        <input type="text" id="txtPhoneNumber" maxlength="10" minlength="10" class="form-control col-md-7 myinput input4"
+          placeholder="Enter your Phone Number!">
+        <img class="iconTick hide" src="asset/img/check-tick-icon-10.png" alt="" />
+      </div>
+      <small id="helpId" class="text-muted hide"></small>
+      <div class="form-inline mt-2 d-flex justify-content-left">
+        <label for="txtDate">Date of birth</label>
+        <input id="txtDate" class="form-control col-md-7 myinput input5" type="text" placeholder="Enter your Date of birth!" />
+        <img class="iconTick hide" src="asset/img/check-tick-icon-10.png" alt="" />
+      </div>
+      <small id="helpId" class="text-muted hide"></small>
+      <div class="form-inline mt-2 d-flex justify-content-left">
+        <label for="txtSalary">Basic Salary</label>
+        <input type="number" min="3000000" id="txtSalary" class="form-control col-md-7 myinput input6" placeholder="Enter your Basic Salary!">
+        <img class="iconTick hide" src="asset/img/check-tick-icon-10.png" alt="" />
+      </div>
+      <small id="helpId" class="text-muted hide"></small>
+      <div class="form-inline mt-2 d-flex justify-content-left">
+        <label for="txtNumberWorking">Number of working days</label>
+        <input type="number" min="24" max="31" id="txtNumberWorking" class="form-control col-md-7 myinput input7"
+          placeholder="Enter Number of working days!">
+        <img class="iconTick hide" src="asset/img/check-tick-icon-10.png" alt="" />
+      </div>
+      <small id="helpId" class="text-muted hide"></small>
+      <div class="form-inline mt-2 d-flex justify-content-left">
+        <label for="txtPosition">Position</label>
+        <input type="text" id="txtPosition" class="form-control col-md-7 myinput input8" placeholder="Enter your Position!">
+        <img class="iconTick hide" src="asset/img/check-tick-icon-10.png" alt="" />
+      </div>
+      <small id="helpId" class="text-muted hide"></small>
+      <div class="form-inline mt-2 d-flex justify-content-left">
+        <label for="txtAllowance">Allowance</label>
+        <input type="number" min="500000" id="txtAllowance" class="form-control col-md-7 myinput input9" placeholder="Enter your Allowance!">
+        <img class="iconTick hide" src="asset/img/check-tick-icon-10.png" alt="" />
+      </div>
+      <small id="helpId" class="text-muted hide"></small>
+      <div class="d-flex justify-content-center">
+        <button type="button" id="btnAdd"></button>
+        <button type="button" id="btnReset" class="btn btn-light mt-4 ml-2"> <i class="fa fa-refresh mr-2"></i>Reset</button>
+      </div>
+    </form>
+  </div>
+  <!-- menu feature -->
+  <div class="menuFeature d-flex justify-content-between" id="menuFeature">
+    <p>EMPLOYEE LIST</p>
+    <!-- item right bar -->
+    <div class="form-inline menuright">
+      <!-- dropdowns list -->
+      <div class="dropdown mydropdown">
+        <button class="btn dropdown-toggle btndropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Sort Data
+        </button>
+        <ul class="dropdown-menu mydropdownmenu" aria-labelledby="dropdownMenuButton" id="dropdownmenu">
+          <li class="dropdown-item mydropdownitemascending" id="itemascending">
+            <a>Ascending<i class="fa fa-angle-right"></i></a>
+          <!-- menu dropdown ascending -->
+          <ul class="dropdown-menu menudropdownascending" id="menuascending">
+              <li class="dropdown-item mydropdownitemage" id="itemageascending"><a>Age</a></li>
+              <li class="dropdown-item mt-1 mydropdownitemsalary" id="itemsalaryascending"><a>Salary</a></li>
+          </ul>
+          </li>  
+          <li class="dropdown-item mt-1 mydropdownitemdecrease" id="itemparent">
+              <a>Decrease<i class="fa fa-angle-right"></i></a>
+            <!-- menu dropdown ascending -->
+            <ul class="dropdown-menu menudropdowndecrease" id="menudecrease">
+                <li class="dropdown-item mydropdownitemage" id="itemagedecrease"><a>Age</a></li>
+                <li class="dropdown-item mt-1 mydropdownitemsalary" id="itemsalarydecrease"><a>Salary</a></li>
+            </ul>
+            </li>
+            <li class="dropdown-item mt-1 mydropdownitemalphabetical" id="itemalphabetical">In alphabetical order</li>
+        </ul>
+      </div>
+      <!-- dropdown list salary -->
+      <div class="dropdown mydropdown">
+        <button class="btn dropdown-toggle btndropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Salary Employee
+        </button>
+        <ul class="dropdown-menu mydropdownmenu" aria-labelledby="dropdownMenuButton" id="dropdownmenu">
+          <li class="dropdown-item mydropdownitemstaff" id="itemstaff">
+            <a>Staff is already in least</a>
+          </li>  
+          <li class="dropdown-item mt-1 mydropdownitemcount" id="itemcount">
+              <a>Number of employees over 10 million</a>
+            </li>
+        </ul>
+      </div>
+      <!-- search bar -->
+      <div class="input-group inputsearch">
+        <input id="txtsearch" type="text" class="form-control" placeholder="Search">
+        <div class="input-group-append">
+          <button id="btnsearch" class="btn btn-success btnsearch" type="submit"><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+      <button class="btn btncomback" id="btncomback">Reset list</button>
+    </div>
+  </div>
+  <!-- declare bar -->
+  <div class="declarebar hide" id="declare"></div>
+  <!-- data table -->
+  <div>
+    <table class="table" id="tableEmployee">
+
+      <thead>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Phone</td>
+        <td>Birthday</td>
+        <td>Salary</td>
+        <td>Working days</td>
+        <td>Position</td>
+        <td>Allowance</td>
+        <td>Action</td>
+      </thead>
+      <tbody id="myTbody">
+
+      </tbody>
+    </table>
+  </div>
+  <!-- bar empty -->
+  <div class="emptybar hide" id="emptybar">NOT DATA</div>
+  <!-- page navigation -->
+  <nav aria-label="Page navigation example" id="myPageNavigation" class="d-flex justify-content-center hide">
+    <a href="#menuFeature" aria-label="Previous" id="buttonprev">
+      <span aria-hidden="true"><i class="fa fa-angle-left myarrow"></i></span>
+
+    </a>
+    <ul class="pagination navigate" id="itemPage">
+    </ul>
+    <a href="#menuFeature" aria-label="Next" id="buttonnext">
+      <span aria-hidden="true"><i class="fa fa-angle-right myarrow"></i></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </nav>
+  <!-- footer -->
+  <div class="col-lg-12 footer">
+    <p>© Copyright 2018. Designed by LNHTDesigner.</p>
+  </div>
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title" id="headermodal"></h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body" id="mymodalbody">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+  <script src="app/model/Employee.js"></script>
+  <script src="app/model/ListEmployee.js"></script>
+  <script src="app/controller/Main.js"></script>
+  <script>
+    var dateInput = $('#txtDate').datepicker({
+      format: 'dd/mm/yyyy',
+    });
+  </script>
+</body>
+
+</html>
